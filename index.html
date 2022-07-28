@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contactez-nous</title>
+</head>
+<body>
+    <div class="load"></div>
+    <form id="form" >
+        <h1>Contactez-nous</h1>
+        <input id="from_name" name="from_name" placeholder="Entrer votre nom et prénom" type="text"><br>
+        <input id="email_id" name="email_id" placeholder="Entrer votre e-mail" type="email"><br>
+        <textarea name="message" placeholder="Entrer votre message" id="message" cols="30" rows="10"></textarea><br>
+        <button  id="button" type="submit">Envoyer</button>
+    </form>
+
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+  
+  <script type="text/javascript">
+    emailjs.init('tMVN8O-dfxJshKIMd')
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
